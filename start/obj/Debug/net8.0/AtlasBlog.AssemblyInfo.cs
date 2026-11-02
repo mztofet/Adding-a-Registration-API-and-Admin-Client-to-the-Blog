@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AtlasBlog")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+50571901b4170196ae5159672a378be2521d40e9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b6c1d9f9882e886d96e011e2c1b148fad2476b7d")]
 [assembly: System.Reflection.AssemblyProductAttribute("AtlasBlog")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AtlasBlog")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
