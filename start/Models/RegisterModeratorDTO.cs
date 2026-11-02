@@ -1,4 +1,4 @@
-namespace AtlasBlog.Models.DTOs;
+namespace AtlasBlog.Models;
 
 public class RegisterModeratorDTO
 {

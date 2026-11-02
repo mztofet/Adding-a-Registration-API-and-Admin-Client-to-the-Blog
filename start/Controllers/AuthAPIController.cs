@@ -1,6 +1,5 @@
 using AtlasBlog.Data;
 using AtlasBlog.Models;
-using AtlasBlog.Models.DTOs;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
@@ -22,7 +21,6 @@ public class AuthAPIController : ControllerBase
     {
         _userManager = userManager;
         _context = context;
-
         _apiKey = configuration["ApiSettings:ApiKey"] ?? "";
     }
 
@@ -31,100 +29,89 @@ public class AuthAPIController : ControllerBase
         return apiKey == _apiKey;
     }
 
-[HttpPost("registeradmin")]
-public async Task<IActionResult> RegisterAdmin(
-    RegisterAdminDTO model)
-{
-    if (!IsValidApiKey(model.ApiKey))
-        return Unauthorized("Invalid API Key");
-
-    var user = new ApplicationUser
+    [HttpPost("registeradmin")]
+    public async Task<IActionResult> RegisterAdmin(RegisterAdminDTO model)
     {
-        UserName = model.Username,
-        Email = model.Username
-    };
+        if (!IsValidApiKey(model.ApiKey))
+            return Unauthorized("Invalid API Key");
 
-    var result = await _userManager.CreateAsync(
-        user,
-        model.Password);
+        var user = new ApplicationUser
+        {
+            UserName = model.Username,
+            Email = model.Username
+        };
 
-    if (!result.Succeeded)
-        return BadRequest(result.Errors);
+        var result = await _userManager.CreateAsync(user, model.Password);
 
-    await _userManager.AddClaimAsync(
-        user,
-        new Claim("admin", "true"));
+        if (!result.Succeeded)
+            return BadRequest(result.Errors);
 
-    return Ok("Admin Created");
-}
+        await _userManager.AddClaimAsync(
+            user,
+            new Claim("admin", "true"));
 
+        return Ok("Admin Created");
+    }
 
-[HttpPost("registermoderator")]
-public async Task<IActionResult> RegisterModerator(
-    RegisterModeratorDTO model)
-{
-    if (!IsValidApiKey(model.ApiKey))
-        return Unauthorized("Invalid API Key");
-
-    var user = new ApplicationUser
+    [HttpPost("registermoderator")]
+    public async Task<IActionResult> RegisterModerator(RegisterModeratorDTO model)
     {
-        UserName = model.Username,
-        Email = model.Username
-    };
+        if (!IsValidApiKey(model.ApiKey))
+            return Unauthorized("Invalid API Key");
 
-    var result = await _userManager.CreateAsync(
-        user,
-        model.Password);
+        var user = new ApplicationUser
+        {
+            UserName = model.Username,
+            Email = model.Username
+        };
 
-    if (!result.Succeeded)
-        return BadRequest(result.Errors);
+        var result = await _userManager.CreateAsync(user, model.Password);
 
-    await _userManager.AddClaimAsync(
-        user,
-        new Claim("moderator", "true"));
+        if (!result.Succeeded)
+            return BadRequest(result.Errors);
 
-    return Ok("Moderator Created");
-}
-[HttpPost("registerauthor")]
-public async Task<IActionResult> RegisterAuthor(
-    RegisterAuthorDTO model)
-{
-    if (!IsValidApiKey(model.ApiKey))
-        return Unauthorized("Invalid API Key");
+        await _userManager.AddClaimAsync(
+            user,
+            new Claim("moderator", "true"));
 
-    var user = new ApplicationUser
+        return Ok("Moderator Created");
+    }
+
+    [HttpPost("registerauthor")]
+    public async Task<IActionResult> RegisterAuthor(RegisterAuthorDTO model)
     {
-        UserName = model.Username,
-        Email = model.Username
-    };
+        if (!IsValidApiKey(model.ApiKey))
+            return Unauthorized("Invalid API Key");
 
-    var result = await _userManager.CreateAsync(
-        user,
-        model.Password);
+        var user = new ApplicationUser
+        {
+            UserName = model.Username,
+            Email = model.Username
+        };
 
-    if (!result.Succeeded)
-        return BadRequest(result.Errors);
+        var result = await _userManager.CreateAsync(user, model.Password);
 
-    await _userManager.AddClaimAsync(
-        user,
-        new Claim("author", "true"));
+        if (!result.Succeeded)
+            return BadRequest(result.Errors);
 
-    var blog = new Blog
-    {
-        Title = model.BlogTitle,
-        Subtitle = model.Subtitle,
-        Description = model.Description,
-        CreatedAt = DateTime.Now,
-        LastModifiedAt = DateTime.Now,
-        AuthorId = user.Id
-    };
+        await _userManager.AddClaimAsync(
+            user,
+            new Claim("author", "true"));
 
-    _context.Blogs.Add(blog);
+        var blog = new Blog
+        {
+            Title = model.BlogTitle,
+            Subtitle = model.Subtitle,
+            Description = model.Description,
+            CreatedAt = DateTime.Now,
+            LastModifiedAt = DateTime.Now,
+            AuthorId = user.Id
+        };
 
-    await _context.SaveChangesAsync();
+        _context.Blogs.Add(blog);
 
-    return Ok("Author and Blog Created");
-}
+        await _context.SaveChangesAsync();
 
-
+        return Ok("Author and Blog Created");
+    }
 }

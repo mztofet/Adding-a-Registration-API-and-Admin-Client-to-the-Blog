@@ -36,10 +36,14 @@ C:\Users\Admin\OneDrive\Desktop\wd13503\Week4hw\Adding-a-Registration-API-and-Ad
 C:\Users\Admin\OneDrive\Desktop\wd13503\Week4hw\Adding-a-Registration-API-and-Admin-Client-to-the-Blog\start\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\Admin\OneDrive\Desktop\wd13503\Week4hw\Adding-a-Registration-API-and-Admin-Client-to-the-Blog\start\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 C:\Users\Admin\OneDrive\Desktop\wd13503\Week4hw\Adding-a-Registration-API-and-Admin-Client-to-the-Blog\start\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Admin\OneDrive\Desktop\wd13503\Week4hw\Adding-a-Registration-API-and-Admin-Client-to-the-Blog\start\bin\Debug\net8.0\Microsoft.OpenApi.dll
 C:\Users\Admin\OneDrive\Desktop\wd13503\Week4hw\Adding-a-Registration-API-and-Admin-Client-to-the-Blog\start\bin\Debug\net8.0\Mono.TextTemplating.dll
 C:\Users\Admin\OneDrive\Desktop\wd13503\Week4hw\Adding-a-Registration-API-and-Admin-Client-to-the-Blog\start\bin\Debug\net8.0\SQLitePCLRaw.batteries_v2.dll
 C:\Users\Admin\OneDrive\Desktop\wd13503\Week4hw\Adding-a-Registration-API-and-Admin-Client-to-the-Blog\start\bin\Debug\net8.0\SQLitePCLRaw.core.dll
 C:\Users\Admin\OneDrive\Desktop\wd13503\Week4hw\Adding-a-Registration-API-and-Admin-Client-to-the-Blog\start\bin\Debug\net8.0\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\Admin\OneDrive\Desktop\wd13503\Week4hw\Adding-a-Registration-API-and-Admin-Client-to-the-Blog\start\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Admin\OneDrive\Desktop\wd13503\Week4hw\Adding-a-Registration-API-and-Admin-Client-to-the-Blog\start\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Admin\OneDrive\Desktop\wd13503\Week4hw\Adding-a-Registration-API-and-Admin-Client-to-the-Blog\start\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\Admin\OneDrive\Desktop\wd13503\Week4hw\Adding-a-Registration-API-and-Admin-Client-to-the-Blog\start\bin\Debug\net8.0\System.CodeDom.dll
 C:\Users\Admin\OneDrive\Desktop\wd13503\Week4hw\Adding-a-Registration-API-and-Admin-Client-to-the-Blog\start\bin\Debug\net8.0\System.Composition.AttributedModel.dll
 C:\Users\Admin\OneDrive\Desktop\wd13503\Week4hw\Adding-a-Registration-API-and-Admin-Client-to-the-Blog\start\bin\Debug\net8.0\System.Composition.Convention.dll
@@ -143,6 +147,7 @@ C:\Users\Admin\OneDrive\Desktop\wd13503\Week4hw\Adding-a-Registration-API-and-Ad
 C:\Users\Admin\OneDrive\Desktop\wd13503\Week4hw\Adding-a-Registration-API-and-Admin-Client-to-the-Blog\start\obj\Debug\net8.0\AtlasBlog.AssemblyInfoInputs.cache
 C:\Users\Admin\OneDrive\Desktop\wd13503\Week4hw\Adding-a-Registration-API-and-Admin-Client-to-the-Blog\start\obj\Debug\net8.0\AtlasBlog.AssemblyInfo.cs
 C:\Users\Admin\OneDrive\Desktop\wd13503\Week4hw\Adding-a-Registration-API-and-Admin-Client-to-the-Blog\start\obj\Debug\net8.0\AtlasBlog.csproj.CoreCompileInputs.cache
+C:\Users\Admin\OneDrive\Desktop\wd13503\Week4hw\Adding-a-Registration-API-and-Admin-Client-to-the-Blog\start\obj\Debug\net8.0\AtlasBlog.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Admin\OneDrive\Desktop\wd13503\Week4hw\Adding-a-Registration-API-and-Admin-Client-to-the-Blog\start\obj\Debug\net8.0\AtlasBlog.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Admin\OneDrive\Desktop\wd13503\Week4hw\Adding-a-Registration-API-and-Admin-Client-to-the-Blog\start\obj\Debug\net8.0\AtlasBlog.sourcelink.json
 C:\Users\Admin\OneDrive\Desktop\wd13503\Week4hw\Adding-a-Registration-API-and-Admin-Client-to-the-Blog\start\obj\Debug\net8.0\rjimswa.dswa.cache.json
@@ -160,8 +165,3 @@ C:\Users\Admin\OneDrive\Desktop\wd13503\Week4hw\Adding-a-Registration-API-and-Ad
 C:\Users\Admin\OneDrive\Desktop\wd13503\Week4hw\Adding-a-Registration-API-and-Admin-Client-to-the-Blog\start\obj\Debug\net8.0\AtlasBlog.pdb
 C:\Users\Admin\OneDrive\Desktop\wd13503\Week4hw\Adding-a-Registration-API-and-Admin-Client-to-the-Blog\start\obj\Debug\net8.0\AtlasBlog.genruntimeconfig.cache
 C:\Users\Admin\OneDrive\Desktop\wd13503\Week4hw\Adding-a-Registration-API-and-Admin-Client-to-the-Blog\start\obj\Debug\net8.0\ref\AtlasBlog.dll
-C:\Users\Admin\OneDrive\Desktop\wd13503\Week4hw\Adding-a-Registration-API-and-Admin-Client-to-the-Blog\start\bin\Debug\net8.0\Microsoft.OpenApi.dll
-C:\Users\Admin\OneDrive\Desktop\wd13503\Week4hw\Adding-a-Registration-API-and-Admin-Client-to-the-Blog\start\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
-C:\Users\Admin\OneDrive\Desktop\wd13503\Week4hw\Adding-a-Registration-API-and-Admin-Client-to-the-Blog\start\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\Users\Admin\OneDrive\Desktop\wd13503\Week4hw\Adding-a-Registration-API-and-Admin-Client-to-the-Blog\start\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\Admin\OneDrive\Desktop\wd13503\Week4hw\Adding-a-Registration-API-and-Admin-Client-to-the-Blog\start\obj\Debug\net8.0\AtlasBlog.MvcApplicationPartsAssemblyInfo.cs
